@@ -43,7 +43,7 @@ RUN \
 
 # hadolint ignore=DL3013
 RUN \
-    pip3 install --no-cache-dir "python-matter-server[server]"
+    pip3 install --no-cache-dir "python-matter-server[server]==${PYTHON_MATTER_SERVER}"
 
 VOLUME ["/data"]
 EXPOSE 5580
