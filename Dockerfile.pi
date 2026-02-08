@@ -39,6 +39,8 @@ RUN \
     fi \
     && chmod +x /usr/local/bin/chip-ota-provider-app
 
+ENV CRYPTOGRAPHY_DONT_BUILD_RUST 1
+
 # hadolint ignore=DL3013
 RUN \
     pip3 install --no-cache-dir "python-matter-server[server]"
