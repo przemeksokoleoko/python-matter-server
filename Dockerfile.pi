@@ -32,7 +32,7 @@ ARG TARGETPLATFORM
 RUN \
     set -x \
     && echo "${TARGETPLATFORM}" \
-    && if [ "${TARGETPLATFORM}" = "linux/armv7" ]; then \
+    && if [ "${TARGETPLATFORM}" = "linux/arm/v7" ]; then \
         curl -Lo /usr/local/bin/chip-ota-provider-app "${chip_example_url}/chip-ota-provider-app-armv7"; \
     else \
         exit 1; \
